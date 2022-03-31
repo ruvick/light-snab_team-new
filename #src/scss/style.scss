@@ -106,22 +106,22 @@ body {
 
 //<ЗАГОЛОВКИ>=================================================================================================================
 h1 {
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 700;
 	// line-height: 52.8 / 40 *100%;
-	line-height: 38px;}
+	line-height: 34px;}
 h2 {
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 38px;}
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 34px;}
 h3 {
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 20.75px;}
 h4 {
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: 500;
-	line-height: 38px;}
+	line-height: 21px;}
 	
 	.title {
 		text-align: center;
@@ -216,7 +216,6 @@ h4 {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	height: 800px;
 }
 
 .catalog__sidebar {
@@ -224,14 +223,14 @@ h4 {
 	-ms-flex: 0 0 258px;
 	flex: 0 0 258px;
 	margin-right: 15px;
-	border: 1px solid #000;
+	// border: 1px solid #000;
 }
 
 .catalog__main-content {
 	-webkit-box-flex: 0;
-	-ms-flex: 0 1 80%;
-	flex: 0 1 80%;
-	border: 1px solid #000;
+	-ms-flex: 0 1 78.8%;
+	flex: 0 1 78.8%;
+	// border: 1px solid #000;
 }
 
 .card-row {
@@ -242,7 +241,7 @@ h4 {
 
 .card-column {
 	display: flex;
-	flex: 0 1 24.5%;
+	flex: 0 1 25%;
 	padding: 0 7.5px 15px 7.5px;
 }
 .card-box {
@@ -280,6 +279,45 @@ h4 {
 .card-box-descp-btn {
 	padding: 9px 8px;
 }
+
+.catalog__sidebar-column {
+	margin-bottom: 23px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.catalog__sidebar-btn-block {
+}
+.catalog__sidebar-btn-block-link {
+	display: block;
+	font-size: 18px;
+	line-height: 21px;
+	padding: 3px 0 3px 10px;
+}
+.btn-link {
+	padding: 7px 8px;
+	border-bottom: 0.02px solid #e3e3e3;
+}
+.btn-link_grey {
+	border: 0.15px solid #e3e3e3;
+	background: #E3E3E3;
+	margin-bottom: 3px;
+}
+
+.catalog__sidebar-column-name {
+	padding-left: 10px;
+	margin-bottom: 15px;
+}
+
+.catalog__sidebar-column-line {
+	width: 100%;
+	height: 0.69px;
+	background: #e3e3e3;
+	margin-top: 16px;
+}
+
+
+
 //========================================================================================================================================================
 
 
