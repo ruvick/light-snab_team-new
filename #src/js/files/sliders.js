@@ -146,10 +146,10 @@ let sliderBrends = new Swiper('.sliderBrends', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	pagination: {
-		el: '.swiper-paggination',
-		clickable: true,
-	},
+	// pagination: {
+	// 	el: '.swiper-paggination',
+	// 	clickable: true,
+	// },
 	// Arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -209,10 +209,10 @@ let sliderCert = new Swiper('.sliderCert', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	pagination: {
-		el: '.swiper-paggination',
-		clickable: true,
-	},
+	// pagination: {
+	// 	el: '.swiper-paggination',
+	// 	clickable: true,
+	// },
 	// Arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
