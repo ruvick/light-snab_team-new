@@ -62,7 +62,7 @@ if (sliderScrollItems.length > 0) {
 function sliders_bild_callback(params) { }
 
 // Сюда пишем класс нашего слайдера и меняем переменную
-let slider = new Swiper('.slider', {
+let slider = new Swiper('.sliderMain', {
 	// effect: 'fade',
 	autoplay: {
 		delay: 3000,
@@ -83,10 +83,136 @@ let slider = new Swiper('.slider', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.swiper-paggination',
-	//	clickable: true,
+	pagination: {
+		el: '.swiper-paggination',
+		clickable: true,
+	},
+	// Arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	/*
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		1268: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+	*/
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
 	//},
+});
+
+// Сюда пишем класс нашего слайдера и меняем переменную
+let sliderBrends = new Swiper('.sliderBrends', {
+	// effect: 'fade',
+	// autoplay: {
+	// 	delay: 3000,
+	// 	disableOnInteraction: false,
+	// },
+
+	observer: true,
+	observeParents: true,
+	slidesPerView: 9,
+	spaceBetween: 40, //отступ в пикселях
+	autoHeight: true,
+	speed: 2000,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	loop: true, //циклично
+	// slidesPerGroup: 3, //по 3 слайда
+	// slideToClickedSlide: true, //клик по слайду
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	pagination: {
+		el: '.swiper-paggination',
+		clickable: true,
+	},
+	// Arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	/*
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		1268: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+	*/
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+
+// Сюда пишем класс нашего слайдера и меняем переменную
+let sliderCert = new Swiper('.sliderCert', {
+	// effect: 'fade',
+	// autoplay: {
+	// 	delay: 3000,
+	// 	disableOnInteraction: false,
+	// },
+
+	observer: true,
+	observeParents: true,
+	slidesPerView: 5,
+	spaceBetween: 47, //отступ в пикселях
+	autoHeight: true,
+	speed: 2000,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	loop: true, //циклично
+	// slidesPerGroup: 3, //по 3 слайда
+	// slideToClickedSlide: true, //клик по слайду
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	pagination: {
+		el: '.swiper-paggination',
+		clickable: true,
+	},
 	// Arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
