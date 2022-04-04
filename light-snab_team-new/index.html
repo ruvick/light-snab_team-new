@@ -1,609 +1,1 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<title>Главная</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
-	<!-- <link rel="stylesheet" href="css/fancybox.css"> -->
-	<link rel="icon" type="image/png" href="img/favicons/icon256.png" sizes="256x256">
-	<link rel="icon" type="image/png" href="img/favicons/icon128.png" sizes="128x128">
-	<link rel="icon" type="image/png" href="img/favicons/icon64.png" sizes="64x64">
-	<link rel="icon" type="image/png" href="img/favicons/icon32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="img/favicons/icon16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="img/favicons/icon.svg" sizes="any">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-	<div class="wrapper">
-		<header id="header" class="header">
-	<div class="header__container _container">
-
-		<div class="header__row d-flex">
-
-			<a href="index.html" class="logo-icon header__logo">
-				<!-- <? bloginfo("url"); ?> -->
-			</a>
-
-			<div class="header__contacts d-flex">
-				<a href="#" class="header__contacts-address">Москва, ул. Маяковского,25</a>
-				<a href="tel:88007556504" class="header__contacts-phone">8 800 755 65 04</a>
-				<a href="mailto:info@light.ru" class="header__contacts-email">info@light.ru</a>
-			</div>
-
-			<div class="icon-menu" aria-label="Бургер меню">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<!-- </div> -->
-
-			<!-- </div> -->
-
-		</div>
-</header>
-
-<!-- Мобильное меню -->
-<div class="mob-menu header__mob-menu">
-	<ul class="mob-menu__list">
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 1</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 2</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 3</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 4</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 5</a></li>
-	</ul>
-	<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
-		'container_class' => 'mob-menu__list','container' => false )); ?>  -->
-	<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
-</div>
-
-<!-- Строка мобильного поиска -->
-<div class="search header__search-mob">
-	<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
-		<input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"
-			id="s">
-		<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
-	</form>
-</div>
-		<main class="page">
-
-			<section id="slider-main" class="slider-main">
-
-				<div class="slider-bg-wrap">
-					<div class="sliderMain _swiper">
-						<div class="slider-bg__slide slider__slide slider-main__slide">
-							<div class="slider-bg__container _container">
-								<h1 class="slider-main__title">
-									СОВРЕМЕННЫЙ <br>
-									<span>ДИЗАЙН</span>
-								</h1>
-								<p class="slider-main__subtitle">ЕВРОПЕЙСКОЕ КАЧЕСТВО</p>
-							</div>
-						</div>
-						<div class="slider-bg__slide slider__slide slider-main__slide">
-							<div class="slider-bg__container _container">
-								<h1 class="slider-main__title">
-									СОВРЕМЕННЫЙ <br>
-									<span>ДИЗАЙН</span>
-								</h1>
-								<p class="slider-main__subtitle">ЕВРОПЕЙСКОЕ КАЧЕСТВО</p>
-							</div>
-						</div>
-						<div class="slider-bg__slide slider__slide slider-main__slide">
-							<div class="slider-bg__container _container">
-								<h1 class="slider-main__title">
-									СОВРЕМЕННЫЙ <br>
-									<span>ДИЗАЙН</span>
-								</h1>
-								<p class="slider-main__subtitle">ЕВРОПЕЙСКОЕ КАЧЕСТВО</p>
-							</div>
-						</div>
-					</div>
-					<div class="slider-bg__swiper-button-block swiper-button-block">
-						<div class="_container">
-							<div class="slider-main__swiper-paggination swiper-paggination"></div>
-						</div>
-					</div>
-				</div>
-
-			</section>
-
-			<section id="best-offers" class="best-offers">
-				<div class="_container">
-					<h2 class="best-offers__title title">ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</h2>
-					<div class="best-offers__row">
-
-						<div class="card-column">
-							<div class="card-box">
-								<div class="card-box-img">
-									<img src="img/cards/02.jpg" alt="">
-								</div>
-								<div class="card-box-descp">
-									<h4 class="card-box-descp-title">
-										бра Golden Bird Double
-									</h4>
-									<div class="card-box-descp-payment d-flex">
-										<div class="card-box-descp-price rub">15 210 </div>
-										<a href="#" class="card-box-descp-btn btn">Подробнее</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="card-column">
-							<div class="card-box">
-								<div class="card-box-img">
-									<img src="img/cards/03.jpg" alt="">
-								</div>
-								<div class="card-box-descp">
-									<h4 class="card-box-descp-title">
-										люстра The Fluttering Butterfly
-									</h4>
-									<div class="card-box-descp-payment d-flex">
-										<div class="card-box-descp-price rub">5230 </div>
-										<a href="#" class="card-box-descp-btn btn">Подробнее</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="card-column">
-							<div class="card-box">
-								<div class="card-box-img">
-									<img src="img/cards/04.jpg" alt="">
-								</div>
-								<div class="card-box-descp">
-									<h4 class="card-box-descp-title">
-										люстра The Fluttering Butterfly
-									</h4>
-									<div class="card-box-descp-payment d-flex">
-										<div class="card-box-descp-price rub">5230 </div>
-										<a href="#" class="card-box-descp-btn btn">Подробнее</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="card-column">
-							<div class="card-box">
-								<div class="card-box-img">
-									<img src="img/cards/05.jpg" alt="">
-								</div>
-								<div class="card-box-descp">
-									<h4 class="card-box-descp-title">
-										люстра Orion 4
-									</h4>
-									<div class="card-box-descp-payment d-flex">
-										<div class="card-box-descp-price rub">43 240 </div>
-										<a href="#" class="card-box-descp-btn btn">Подробнее</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="card-column">
-							<div class="card-box">
-								<div class="card-box-img">
-									<img src="img/cards/01.jpg" alt="">
-								</div>
-								<div class="card-box-descp">
-									<h4 class="card-box-descp-title">
-										люстра The Fluttering Butterfly
-									</h4>
-									<div class="card-box-descp-payment d-flex">
-										<div class="card-box-descp-price rub">5230 </div>
-										<a href="#" class="card-box-descp-btn btn">Подробнее</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-			<section id="info" class="info">
-				<div class="_container">
-
-					<div class="info__row d-flex">
-
-						<div class="info__card-block d-flex">
-
-							<div class="info__card-block-item info__card-block-item_top d-flex">
-								<div class="info__card-block-item-descp">
-									<h2 class="info__card-block-item-title">
-										ДИЗАЙНЕРАМ / <br>
-										<span>АРХИТЕКТОРАМ</span>
-									</h2>
-									<a href="#" class="info__card-block-item-btn btn">Подробнее</a>
-								</div>
-								<div class="info__card-block-item-img">
-									<img src="img/info-01.png" alt="">
-								</div>
-							</div>
-
-							<div class="info__card-block-item info__card-block-item_bottom d-flex">
-								<div class="info__card-block-item-img">
-									<img src="img/info-02.png" alt="">
-								</div>
-								<div class="info__card-block-item-descp">
-									<h2 class="info__card-block-item-title">
-										КОМПЛЕКТОВЩИКАМ / <br>
-										<span>СНАБЖЕНЦАМ</span>
-									</h2>
-									<a href="#" class="info__card-block-item-btn btn">Подробнее</a>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="info__card-big d-flex">
-							<div class="info__card-block-item-descp">
-								<h2 class="info__card-block-item-title">
-									LIGHTSNAB
-								</h2>
-								<p class="info__card-block-item-subtitle">
-									КРУПНЫЙ ДЕСТРИБЬЮТЕР
-									НА РЫНКЕ СВЕТА И
-									ЭЛЕКТРОУСТАНОВОЧНЫХ
-									ИЗДЕЛИЙ
-								</p>
-								<p class="info__card-block-item-text">
-									Без подвесных светильников не обходится оформление практически ни одного современного интерьера. А все
-									благодаря широкому спектру задач, которые можно решить с их помощью: это и основная подсветка
-									пространства, и выделение функциональной зоны, и украшение интерьера… В ассортименте Cosmorelax
-									представлены стильные и необычные подвесные светильники, которые не только будут наполнять интерьер
-									светом, но и радовать глаз
-								</p>
-								<a href="#" class="info__card-block-item-btn btn">Подробнее</a>
-							</div>
-							<div class="info__card-block-item-img_big info__card-block-item-img">
-								<img src="img/info-05.png" alt="">
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-			<section id="inform" class="inform">
-				<div class="_container">
-					<div class="inform__row d-flex">
-
-						<div class="inform__img">
-							<img src="img/info-4.png" alt="">
-						</div>
-
-						<div class="inform__descp">
-							<h2 class="inform__title">Дизайнеры / Архитекторы / Декораторы</h2>
-							<ul class="inform__list">
-								<li class="inform__list-item">Более 200 топ брендов</li>
-								<li class="inform__list-item">Производство по спец. заказу</li>
-								<li class="inform__list-item">Проверенный ассортимент</li>
-								<li class="inform__list-item">Образцы и каталоги</li>
-								<li class="inform__list-item">Сопровождение проекта</li>
-								<li class="inform__list-item">Бонусная программа + Cashback</li>
-								<li class="inform__list-item">Подбор по визуализации</li>
-								<li class="inform__list-item">Бартер-реклама instagram</li>
-								<li class="inform__list-item">Составление КП заказчику</li>
-							</ul>
-							<a href="#callback" class="inform__btn btn _popup-link">Отправить заявку</a>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<section id="brends" class="brends">
-				<div class="_container">
-					<h2 class="brends__title title">У НАС ТОЛЬКО ЛУЧШИЕ БРЕНДЫ</h2>
-					<p class="brends__subtitle">
-						Мы собрали лучшие европейские и мировые бренды производителей люстр и светильников, которые есть на складе
-						нашего интернет магазина.
-						Мы можем поставить практически любое декоративное осещение. Свяжитесь с нами, если нужного товара нет на
-						сайте.
-					</p>
-
-					<div class="sliderBrends _swiper d-flex">
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/01.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/02.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/03.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/04.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/05.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/06.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/07.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/08.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/09.jpg" alt="">
-						</div>
-					</div>
-
-					<a href="#" class="brends__btn btn">Перейти к торговым маркам</a>
-
-				</div>
-			</section>
-
-			<section id="reviews" class="reviews">
-				<div class="_container">
-
-					<div class="reviews__slider reviewsSl _swiper d-flex">
-
-						<div class="reviews__slide slider__slide">
-							<div class="reviews__message">
-								<h3 class="reviews__message-title">Клиентский подход на высоте!</h3>
-								<p class="reviews__message-subtitle">
-									Удобно, что есть проектный отдел и можно сделать световой расчет. Раньше "примерялись" и меняли
-									светильники, не хватало толкового совета - что лучше использовать и как подсветить. На ребят можно
-									положиться, доверил им свои проекты, считают все под ключ. Ассортимент широкий-
-								</p>
-								<a href="#" class="reviews__message-to-read">Читать полностью</a>
-							</div>
-							<div class="reviews__slide-name-block d-flex">
-								<div class="reviews__slide-name-block-img">
-									<img src="img/reviews/01.jpg" alt="">
-								</div>
-								<div class="reviews__slide-name-block-text">
-									<div class="reviews__slide-name-block-descp">Студия дизайна “ВанДизайн”</div>
-									<h3 class="reviews__slide-name-block-name">Светлана</h3>
-								</div>
-							</div>
-						</div>
-
-						<div class="reviews__slide slider__slide">
-							<div class="reviews__message">
-								<h3 class="reviews__message-title">Качество и высокий уровень сервиса</h3>
-								<p class="reviews__message-subtitle">
-									Познакомились с Вами совсем недавно, а так много успели сделать. Для нас выстроили индивидуальный
-									подход
-									и за это БОЛЬШОЕ спасибо ! Теперь комплектуем объекты быстро, а самое главное - качественно.
-									Персональный менеджер Алексей, настоящий профессионал своего дела.удобно
-								</p>
-								<a href="#" class="reviews__message-to-read">Читать полностью</a>
-							</div>
-							<div class="reviews__slide-name-block d-flex">
-								<div class="reviews__slide-name-block-img">
-									<img src="img/reviews/02.jpg" alt="">
-								</div>
-								<div class="reviews__slide-name-block-text">
-									<div class="reviews__slide-name-block-descp">Архитектор</div>
-									<h3 class="reviews__slide-name-block-name">Мария Гром</h3>
-								</div>
-							</div>
-						</div>
-
-						<div class="reviews__slide slider__slide">
-							<div class="reviews__message">
-								<h3 class="reviews__message-title">Клиентский подход на высоте!</h3>
-								<p class="reviews__message-subtitle">
-									Удобно, что есть проектный отдел и можно сделать световой расчет. Раньше "примерялись" и меняли
-									светильники, не хватало толкового совета - что лучше использовать и как подсветить. На ребят можно
-									положиться, доверил им свои проекты, считают все под ключ. Ассортимент широкий-
-								</p>
-								<a href="#" class="reviews__message-to-read">Читать полностью</a>
-							</div>
-							<div class="reviews__slide-name-block d-flex">
-								<div class="reviews__slide-name-block-img">
-									<img src="img/reviews/03.jpg" alt="">
-								</div>
-								<div class="reviews__slide-name-block-text">
-									<div class="reviews__slide-name-block-descp">Студия дизайна “ВанДизайн”</div>
-									<h3 class="reviews__slide-name-block-name">Светлана</h3>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<section id="certificates" class="certificates">
-				<div class="_container">
-					<h2 class="certificates__title title">СЕРТИФИКАТЫ</h2>
-
-					<div class="certificates__slider sliderCert _swiper d-flex">
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
-					</div>
-
-				</div>
-			</section>
-
-		</main>
-		<footer id="footer" class="footer">
-	<div class="footer__container _container">
-
-		<div class="footer__row d-flex">
-
-			<a href="index.html" class="logo-icon footer__logo">
-				<!-- <? bloginfo("url"); ?> -->
-			</a>
-
-			<ul class="footer__menu">
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Главная</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Торговые марки</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Информация</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Контакты</a></li>
-			</ul>
-
-			<div class="footer__contacts">
-				<a href="#" class="footer__contacts-address">Москва, ул. Маяковского,25</a>
-				<a href="tel:88007556504" class="footer__contacts-phone">8 800 755 65 04</a>
-				<a href="mailto:info@light.ru" class="footer__contacts-email">info@light.ru</a>
-			</div>
-
-			<form class="footer__form" action="#">
-				<div class="form__line">
-					<h3 class="footer__form-title">Форма обратной связи</h3>
-					<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя*"
-						class="footer__form-input input _req">
-					<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-						data-value="Tелефон*" class="footer__form-input input _phone _req">
-					<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="E-mail*"
-						class="footer__form-input input _email _req">
-					<textarea class="input _req" name="" id="" name="form[]" data-error="Заполните поля"
-						data-value="Сообщение"></textarea>
-				</div>
-				<div class="footer__form-block-btn d-flex">
-					<button type="submit" class="footer__form-btn btn">Отправить заявку</button>
-					<p class="footer__form-policy">
-						* Нажимая на кнопку «Отправить»
-						Вы принимаете <a href="#" class="footer__form-policy-link">условия политики конфиденциальности
-							в отношении обработки персональных данных</a>
-					</p>
-				</div>
-			</form>
-
-			<div class="footer__soc-block d-flex">
-				<p class="footer__soc-block-name">Социальные сети</p>
-				<div class="footer__soc-block-icons">
-					<a href="#" class="footer__soc-block-icons-link soc-block-icons-link-01"></a>
-					<a href="#" class="footer__soc-block-icons-link soc-block-icons-link-02"></a>
-					<a href="#" class="footer__soc-block-icons-link soc-block-icons-link-03"></a>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-</footer>
-	</div>
-	<!-- Popup-с формой -->
-<div class="popup popup_callback">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-			<div class="popup__item d-flex">
-				<div class="popup__img">
-					<img src="img/popup.jpg" alt="">
-				</div>
-				<div class="popup__form-block">
-					<h2>Заказать звонок</h2>
-					<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
-					<form action="#" class="form">
-						<div class="form__line">
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"
-								class="popup__form-input input _req">
-							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон"
-								class="popup__form-input input _phone _req">
-							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Email"
-								class="popup__form-input input _email _req">
-						</div>
-						<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
-								конфиденциальности</a></p>
-						<button class="popup__form-btn form__btn btn">Заказать</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
-<!-- =============================================================================================================================== -->
-
-
-<div class="popup popup_popup">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
-</div>
-<!-- =============================================================================================================================== -->
-
-<div class="popup popup_massagename-message">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
-</div>
-<!-- =============================================================================================================================== -->
-
-<div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
-</div>
-<!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> -->
-<!-- =============================================================================================================================== -->
-
-<!-- Popup-CSS -->
-<!-- <div id="popup-2" class="popup-2">
-	<a href="#" class="popup__area-2"></a>
-	<div class="popup__body-2">
-		<div class="popup__content-2">
-
-			<a href="#" class="popup__close-2">Close</a>
-			<div class="popup__title">Заказать ворота Дешево!</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-
-		</div>
-	</div>
-</div> -->
-<!-- <a href="#popup-2" class="heading-info__button popup-link"></a> -->
-	<!-- Swiper -->
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> -->
-<script src="js/vendors.min.js"></script>
-<script src="js/app.min.js"></script>
-</body>
-
-</html>
+<!DOCTYPE html><html lang="ru"><head>	<title>Главная</title>	<meta charset="UTF-8">	<meta name="format-detection" content="telephone=no">	<link rel="stylesheet" href="css/style.min.css?_v=20220404233401">	<!-- <link rel="stylesheet" href="css/fancybox.css?_v=20220404233401"> -->	<link rel="icon" type="image/png" href="img/favicons/icon256.png" sizes="256x256">	<link rel="icon" type="image/png" href="img/favicons/icon128.png" sizes="128x128">	<link rel="icon" type="image/png" href="img/favicons/icon64.png" sizes="64x64">	<link rel="icon" type="image/png" href="img/favicons/icon32.png" sizes="32x32">	<link rel="icon" type="image/png" href="img/favicons/icon16.png" sizes="16x16">	<link rel="icon" type="image/png" href="img/favicons/icon.svg" sizes="any">	<link rel="shortcut icon" href="favicon.ico">	<!-- <meta name="robots" content="noindex, nofollow"> -->	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->	<meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>	<div class="wrapper">		<header id="header" class="header">	<div class="header__container _container">		<div class="header__row d-flex">			<a href="index.html" class="logo-icon header__logo">				<!-- <? bloginfo("url"); ?> -->			</a>			<div class="header__contacts d-flex">				<a href="#" class="header__contacts-address">Москва, ул. Маяковского,25</a>				<a href="tel:88007556504" class="header__contacts-phone">8 800 755 65 04</a>				<a href="mailto:info@light.ru" class="header__contacts-email">info@light.ru</a>			</div>			<div class="icon-menu" aria-label="Бургер меню">				<span></span>				<span></span>				<span></span>			</div>			<!-- </div> -->			<!-- </div> -->		</div></header><!-- Мобильное меню --><div class="mob-menu header__mob-menu">	<ul class="mob-menu__list">		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 1</a></li>		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 2</a></li>		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 3</a></li>		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 4</a></li>		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 5</a></li>	</ul>	<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',		'container_class' => 'mob-menu__list','container' => false )); ?>  -->	<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a></div><!-- Строка мобильного поиска --><div class="search header__search-mob">	<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">		<input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"			id="s">		<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>	</form></div>		<main class="page">			<section id="slider-main" class="slider-main">				<div class="slider-bg-wrap">					<div class="sliderMain _swiper">						<div class="slider-bg__slide slider__slide slider-main__slide">							<div class="slider-bg__container _container">								<h1 class="slider-main__title">									СОВРЕМЕННЫЙ <br>									<span>ДИЗАЙН</span>								</h1>								<p class="slider-main__subtitle">ЕВРОПЕЙСКОЕ КАЧЕСТВО</p>							</div>						</div>						<div class="slider-bg__slide slider__slide slider-main__slide">							<div class="slider-bg__container _container">								<h1 class="slider-main__title">									СОВРЕМЕННЫЙ <br>									<span>ДИЗАЙН</span>								</h1>								<p class="slider-main__subtitle">ЕВРОПЕЙСКОЕ КАЧЕСТВО</p>							</div>						</div>						<div class="slider-bg__slide slider__slide slider-main__slide">							<div class="slider-bg__container _container">								<h1 class="slider-main__title">									СОВРЕМЕННЫЙ <br>									<span>ДИЗАЙН</span>								</h1>								<p class="slider-main__subtitle">ЕВРОПЕЙСКОЕ КАЧЕСТВО</p>							</div>						</div>					</div>					<div class="slider-bg__swiper-button-block swiper-button-block">						<div class="_container">							<div class="slider-main__swiper-paggination swiper-paggination"></div>						</div>					</div>				</div>			</section>			<section id="best-offers" class="best-offers">				<div class="_container">					<h2 class="best-offers__title title">ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</h2>					<div class="best-offers__row">						<div class="card-column">							<div class="card-box">								<div class="card-box-img">									<picture><source srcset="img/cards/02.webp" type="image/webp"><img src="img/cards/02.jpg?_v=1649104441578" alt=""></picture>								</div>								<div class="card-box-descp">									<h4 class="card-box-descp-title">										бра Golden Bird Double									</h4>									<div class="card-box-descp-payment d-flex">										<div class="card-box-descp-price rub">15 210 </div>										<a href="#" class="card-box-descp-btn btn">Подробнее</a>									</div>								</div>							</div>						</div>						<div class="card-column">							<div class="card-box">								<div class="card-box-img">									<picture><source srcset="img/cards/03.webp" type="image/webp"><img src="img/cards/03.jpg?_v=1649104441578" alt=""></picture>								</div>								<div class="card-box-descp">									<h4 class="card-box-descp-title">										люстра The Fluttering Butterfly									</h4>									<div class="card-box-descp-payment d-flex">										<div class="card-box-descp-price rub">5230 </div>										<a href="#" class="card-box-descp-btn btn">Подробнее</a>									</div>								</div>							</div>						</div>						<div class="card-column">							<div class="card-box">								<div class="card-box-img">									<picture><source srcset="img/cards/04.webp" type="image/webp"><img src="img/cards/04.jpg?_v=1649104441578" alt=""></picture>								</div>								<div class="card-box-descp">									<h4 class="card-box-descp-title">										люстра The Fluttering Butterfly									</h4>									<div class="card-box-descp-payment d-flex">										<div class="card-box-descp-price rub">5230 </div>										<a href="#" class="card-box-descp-btn btn">Подробнее</a>									</div>								</div>							</div>						</div>						<div class="card-column">							<div class="card-box">								<div class="card-box-img">									<picture><source srcset="img/cards/05.webp" type="image/webp"><img src="img/cards/05.jpg?_v=1649104441578" alt=""></picture>								</div>								<div class="card-box-descp">									<h4 class="card-box-descp-title">										люстра Orion 4									</h4>									<div class="card-box-descp-payment d-flex">										<div class="card-box-descp-price rub">43 240 </div>										<a href="#" class="card-box-descp-btn btn">Подробнее</a>									</div>								</div>							</div>						</div>						<div class="card-column">							<div class="card-box">								<div class="card-box-img">									<picture><source srcset="img/cards/01.webp" type="image/webp"><img src="img/cards/01.jpg?_v=1649104441578" alt=""></picture>								</div>								<div class="card-box-descp">									<h4 class="card-box-descp-title">										люстра The Fluttering Butterfly									</h4>									<div class="card-box-descp-payment d-flex">										<div class="card-box-descp-price rub">5230 </div>										<a href="#" class="card-box-descp-btn btn">Подробнее</a>									</div>								</div>							</div>						</div>					</div>				</div>			</section>			<section id="info" class="info">				<div class="_container">					<div class="info__row d-flex">						<div class="info__card-block d-flex">							<div class="info__card-block-item info__card-block-item_top d-flex">								<div class="info__card-block-item-descp">									<h2 class="info__card-block-item-title">										ДИЗАЙНЕРАМ / <br>										<span>АРХИТЕКТОРАМ</span>									</h2>									<a href="#" class="info__card-block-item-btn btn">Подробнее</a>								</div>								<div class="info__card-block-item-img">									<picture><source srcset="img/info-01.webp" type="image/webp"><img src="img/info-01.png?_v=1649104441578" alt=""></picture>								</div>							</div>							<div class="info__card-block-item info__card-block-item_bottom d-flex">								<div class="info__card-block-item-img">									<picture><source srcset="img/info-02.webp" type="image/webp"><img src="img/info-02.png?_v=1649104441578" alt=""></picture>								</div>								<div class="info__card-block-item-descp">									<h2 class="info__card-block-item-title">										КОМПЛЕКТОВЩИКАМ / <br>										<span>СНАБЖЕНЦАМ</span>									</h2>									<a href="#" class="info__card-block-item-btn btn">Подробнее</a>								</div>							</div>						</div>						<div class="info__card-big d-flex">							<div class="info__card-block-item-descp">								<h2 class="info__card-block-item-title">									LIGHTSNAB								</h2>								<p class="info__card-block-item-subtitle">									КРУПНЫЙ ДЕСТРИБЬЮТЕР									НА РЫНКЕ СВЕТА И									ЭЛЕКТРОУСТАНОВОЧНЫХ									ИЗДЕЛИЙ								</p>								<p class="info__card-block-item-text">									Без подвесных светильников не обходится оформление практически ни одного современного интерьера. А все									благодаря широкому спектру задач, которые можно решить с их помощью: это и основная подсветка									пространства, и выделение функциональной зоны, и украшение интерьера… В ассортименте Cosmorelax									представлены стильные и необычные подвесные светильники, которые не только будут наполнять интерьер									светом, но и радовать глаз								</p>								<a href="#" class="info__card-block-item-btn btn">Подробнее</a>							</div>							<div class="info__card-block-item-img_big info__card-block-item-img">								<picture><source srcset="img/info-05.webp" type="image/webp"><img src="img/info-05.png?_v=1649104441578" alt=""></picture>							</div>						</div>					</div>				</div>			</section>			<section id="inform" class="inform">				<div class="_container">					<div class="inform__row d-flex">						<div class="inform__img">							<picture><source srcset="img/info-4.webp" type="image/webp"><img src="img/info-4.png?_v=1649104441578" alt=""></picture>						</div>						<div class="inform__descp">							<h2 class="inform__title">Дизайнеры / Архитекторы / Декораторы</h2>							<ul class="inform__list">								<li class="inform__list-item">Более 200 топ брендов</li>								<li class="inform__list-item">Производство по спец. заказу</li>								<li class="inform__list-item">Проверенный ассортимент</li>								<li class="inform__list-item">Образцы и каталоги</li>								<li class="inform__list-item">Сопровождение проекта</li>								<li class="inform__list-item">Бонусная программа + Cashback</li>								<li class="inform__list-item">Подбор по визуализации</li>								<li class="inform__list-item">Бартер-реклама instagram</li>								<li class="inform__list-item">Составление КП заказчику</li>							</ul>							<a href="#callback" class="inform__btn btn _popup-link">Отправить заявку</a>						</div>					</div>				</div>			</section>			<section id="brends" class="brends">				<div class="_container">					<h2 class="brends__title title">У НАС ТОЛЬКО ЛУЧШИЕ БРЕНДЫ</h2>					<p class="brends__subtitle">						Мы собрали лучшие европейские и мировые бренды производителей люстр и светильников, которые есть на складе						нашего интернет магазина.						Мы можем поставить практически любое декоративное осещение. Свяжитесь с нами, если нужного товара нет на						сайте.					</p>					<div class="sliderBrends _swiper d-flex">						<div class="brends__slide slider__slide">							<picture><source srcset="img/brends/01.webp" type="image/webp"><img src="img/brends/01.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="brends__slide slider__slide">							<picture><source srcset="img/brends/02.webp" type="image/webp"><img src="img/brends/02.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="brends__slide slider__slide">							<picture><source srcset="img/brends/03.webp" type="image/webp"><img src="img/brends/03.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="brends__slide slider__slide">							<picture><source srcset="img/brends/04.webp" type="image/webp"><img src="img/brends/04.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="brends__slide slider__slide">							<picture><source srcset="img/brends/05.webp" type="image/webp"><img src="img/brends/05.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="brends__slide slider__slide">							<picture><source srcset="img/brends/06.webp" type="image/webp"><img src="img/brends/06.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="brends__slide slider__slide">							<picture><source srcset="img/brends/07.webp" type="image/webp"><img src="img/brends/07.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="brends__slide slider__slide">							<picture><source srcset="img/brends/08.webp" type="image/webp"><img src="img/brends/08.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="brends__slide slider__slide">							<picture><source srcset="img/brends/09.webp" type="image/webp"><img src="img/brends/09.jpg?_v=1649104441578" alt=""></picture>						</div>					</div>					<a href="#" class="brends__btn btn">Перейти к торговым маркам</a>				</div>			</section>			<section id="reviews" class="reviews">				<div class="_container">					<div class="reviews__slider reviewsSl _swiper d-flex">						<div class="reviews__slide slider__slide">							<div class="reviews__message">								<h3 class="reviews__message-title">Клиентский подход на высоте!</h3>								<p class="reviews__message-subtitle">									Удобно, что есть проектный отдел и можно сделать световой расчет. Раньше "примерялись" и меняли									светильники, не хватало толкового совета - что лучше использовать и как подсветить. На ребят можно									положиться, доверил им свои проекты, считают все под ключ. Ассортимент широкий-								</p>								<a href="#" class="reviews__message-to-read">Читать полностью</a>							</div>							<div class="reviews__slide-name-block d-flex">								<div class="reviews__slide-name-block-img">									<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.jpg?_v=1649104441578" alt=""></picture>								</div>								<div class="reviews__slide-name-block-text">									<div class="reviews__slide-name-block-descp">Студия дизайна “ВанДизайн”</div>									<h3 class="reviews__slide-name-block-name">Светлана</h3>								</div>							</div>						</div>						<div class="reviews__slide slider__slide">							<div class="reviews__message">								<h3 class="reviews__message-title">Качество и высокий уровень сервиса</h3>								<p class="reviews__message-subtitle">									Познакомились с Вами совсем недавно, а так много успели сделать. Для нас выстроили индивидуальный									подход									и за это БОЛЬШОЕ спасибо ! Теперь комплектуем объекты быстро, а самое главное - качественно.									Персональный менеджер Алексей, настоящий профессионал своего дела.удобно								</p>								<a href="#" class="reviews__message-to-read">Читать полностью</a>							</div>							<div class="reviews__slide-name-block d-flex">								<div class="reviews__slide-name-block-img">									<picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.jpg?_v=1649104441578" alt=""></picture>								</div>								<div class="reviews__slide-name-block-text">									<div class="reviews__slide-name-block-descp">Архитектор</div>									<h3 class="reviews__slide-name-block-name">Мария Гром</h3>								</div>							</div>						</div>						<div class="reviews__slide slider__slide">							<div class="reviews__message">								<h3 class="reviews__message-title">Клиентский подход на высоте!</h3>								<p class="reviews__message-subtitle">									Удобно, что есть проектный отдел и можно сделать световой расчет. Раньше "примерялись" и меняли									светильники, не хватало толкового совета - что лучше использовать и как подсветить. На ребят можно									положиться, доверил им свои проекты, считают все под ключ. Ассортимент широкий-								</p>								<a href="#" class="reviews__message-to-read">Читать полностью</a>							</div>							<div class="reviews__slide-name-block d-flex">								<div class="reviews__slide-name-block-img">									<picture><source srcset="img/reviews/03.webp" type="image/webp"><img src="img/reviews/03.jpg?_v=1649104441578" alt=""></picture>								</div>								<div class="reviews__slide-name-block-text">									<div class="reviews__slide-name-block-descp">Студия дизайна “ВанДизайн”</div>									<h3 class="reviews__slide-name-block-name">Светлана</h3>								</div>							</div>						</div>					</div>				</div>			</section>			<section id="certificates" class="certificates">				<div class="_container">					<h2 class="certificates__title title">СЕРТИФИКАТЫ</h2>					<div class="certificates__slider sliderCert _swiper d-flex">						<div class="certificates__slide slider__slide">							<picture><source srcset="img/certificates/01.webp" type="image/webp"><img src="img/certificates/01.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="certificates__slide slider__slide">							<picture><source srcset="img/certificates/01.webp" type="image/webp"><img src="img/certificates/01.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="certificates__slide slider__slide">							<picture><source srcset="img/certificates/01.webp" type="image/webp"><img src="img/certificates/01.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="certificates__slide slider__slide">							<picture><source srcset="img/certificates/01.webp" type="image/webp"><img src="img/certificates/01.jpg?_v=1649104441578" alt=""></picture>						</div>						<div class="certificates__slide slider__slide">							<picture><source srcset="img/certificates/01.webp" type="image/webp"><img src="img/certificates/01.jpg?_v=1649104441578" alt=""></picture>						</div>					</div>				</div>			</section>		</main>		<footer id="footer" class="footer">	<div class="footer__container _container">		<div class="footer__row d-flex">			<a href="index.html" class="logo-icon footer__logo">				<!-- <? bloginfo("url"); ?> -->			</a>			<ul class="footer__menu">				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Главная</a></li>				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Торговые марки</a></li>				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Информация</a></li>				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Контакты</a></li>			</ul>			<div class="footer__contacts">				<a href="#" class="footer__contacts-address">Москва, ул. Маяковского,25</a>				<a href="tel:88007556504" class="footer__contacts-phone">8 800 755 65 04</a>				<a href="mailto:info@light.ru" class="footer__contacts-email">info@light.ru</a>			</div>			<form class="footer__form" action="#">				<div class="form__line">					<h3 class="footer__form-title">Форма обратной связи</h3>					<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя*"						class="footer__form-input input _req">					<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"						data-value="Tелефон*" class="footer__form-input input _phone _req">					<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="E-mail*"						class="footer__form-input input _email _req">					<textarea class="input _req" name="" id="" name="form[]" data-error="Заполните поля"						data-value="Сообщение"></textarea>				</div>				<div class="footer__form-block-btn d-flex">					<button type="submit" class="footer__form-btn btn">Отправить заявку</button>					<p class="footer__form-policy">						* Нажимая на кнопку «Отправить»						Вы принимаете <a href="#" class="footer__form-policy-link">условия политики конфиденциальности							в отношении обработки персональных данных</a>					</p>				</div>			</form>			<div class="footer__soc-block d-flex">				<p class="footer__soc-block-name">Социальные сети</p>				<div class="footer__soc-block-icons">					<a href="#" class="footer__soc-block-icons-link soc-block-icons-link-01"></a>					<a href="#" class="footer__soc-block-icons-link soc-block-icons-link-02"></a>					<a href="#" class="footer__soc-block-icons-link soc-block-icons-link-03"></a>				</div>			</div>		</div>	</div></footer>	</div>	<!-- Popup-с формой --><div class="popup popup_callback">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close" aria-label="Закрыть модальное окно"></div>			<div class="popup__item d-flex">				<div class="popup__img">					<picture><source srcset="img/popup.webp" type="image/webp"><img src="img/popup.jpg?_v=1649104441578" alt=""></picture>				</div>				<div class="popup__form-block">					<h2>Заказать звонок</h2>					<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>					<form action="#" class="form">						<div class="form__line">							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"								class="popup__form-input input _req">							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон"								class="popup__form-input input _phone _req">							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Email"								class="popup__form-input input _email _req">						</div>						<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой								конфиденциальности</a></p>						<button class="popup__form-btn form__btn btn">Заказать</button>					</form>				</div>			</div>		</div>	</div></div><!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> --><!-- =============================================================================================================================== --><div class="popup popup_popup">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close" aria-label="Закрыть модальное окно"></div>		</div>	</div></div><!-- =============================================================================================================================== --><div class="popup popup_massagename-message">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close" aria-label="Закрыть модальное окно"></div>		</div>	</div></div><!-- =============================================================================================================================== --><div class="popup popup_video">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>			<div class="popup__video _video"></div>		</div>	</div></div><!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> --><!-- =============================================================================================================================== --><!-- Popup-CSS --><!-- <div id="popup-2" class="popup-2">	<a href="#" class="popup__area-2"></a>	<div class="popup__body-2">		<div class="popup__content-2">			<a href="#" class="popup__close-2">Close</a>			<div class="popup__title">Заказать ворота Дешево!</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>		</div>	</div></div> --><!-- <a href="#popup-2" class="heading-info__button popup-link"></a> -->	<!-- Swiper --><!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> --><!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> --><script src="js/vendors.min.js?_v=20220404233401"></script><script src="js/app.min.js?_v=20220404233401"></script></body></html>
