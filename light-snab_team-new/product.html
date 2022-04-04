@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Главная</title>
+	<title>Продукт</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -69,57 +69,101 @@
 		<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
 	</form>
 </div>
-		<main class="page">
+		<main class="page page-recurring">
 
-			<section id="slider-main" class="slider-main">
+			<section id="product-sec" class="product-sec recurring">
 				<div class="_container">
+					<p id="breadcrumbs">
+						<span>
+							<span>
+								<a href="index.html">
+									Главная
+								</a> /
+								<a href="catalog.html">
+									Люстры
+								</a> /
+								<span class="breadcrumb_last" aria-current="page">
+									светильник 6475
+								</span>
+							</span>
+						</span>
+					</p>
 
-					<div class="slider__wrap">
-						<div class="slider__container _container">
-							<!-- Слайдер с техническим классом _swiper -->
-							<div class="sliderMain _swiper d-flex">
-
-								<!-- Карточки слайдера с тех классом slider__slide -->
-								<div class="slider-main__slide slider__slide">
-									<h1 class="slider-main__title">
-										СОВРЕМЕННЫЙ <br>
-										<span>ДИЗАЙН</span>
-									</h1>
-									<p class="slider-main__subtitle">ЕВРОПЕЙСКОЕ КАЧЕСТВО</p>
-								</div>
-
-								<div class="slider-main__slide slider__slide">
-									<h1 class="slider-main__title">
-										СОВРЕМЕННЫЙ <br>
-										<span>ДИЗАЙН</span>
-									</h1>
-									<p class="slider-main__subtitle">ЕВРОПЕЙСКОЕ КАЧЕСТВО</p>
-								</div>
-
-								<div class="slider-main__slide slider__slide">
-									<h1 class="slider-main__title">
-										СОВРЕМЕННЫЙ <br>
-										<span>ДИЗАЙН</span>
-									</h1>
-									<p class="slider-main__subtitle">ЕВРОПЕЙСКОЕ КАЧЕСТВО</p>
-								</div>
-
+					<div class="product__row d-flex">
+						<div class="product__slider _swiper d-flex">
+							<div class="product__slide slider__slide">
+								<img src="img/product/01.jpg" alt="">
+							</div>
+							<div class="product__slide slider__slide">
+								<img src="img/product/01.jpg" alt="">
 							</div>
 						</div>
-						<!-- Кнопки-стрлеки -->  
-						<button class="swiper-button swiper-button-next"></button>
-						<button class="swiper-button swiper-button-prev"></button>
-						<!-- Кнопки-точки -->
-						<div class="slider-main__swiper-paggination swiper-paggination"></div>
+
+						<div class="product__descp">
+							<h1 class="product__descp-title">светильник 6475</h1>
+							<p class="product__descp-product-code">код товара: <span>10950</span></p>
+							<div class="product__descp-line"></div>
+
+							<div class="product__charect">
+								<ul class="product__charect-list">
+									<li class="product__charect-list-li"><span>Материал:</span> металл</li>
+									<li class="product__charect-list-li"><span>Цвет:</span> латунь</li>
+									<li class="product__charect-list-li"><span>Тип цоколя:</span> E27</li>
+									<li class="product__charect-list-li"><span>Количество ламп:</span> 1 x 60Вт</li>
+									<li class="product__charect-list-li"><span>Лампы:</span> в комплект не входят</li>
+									<li class="product__charect-list-li"><span>Длинна шнура:</span> max 90</li>
+								</ul>
+
+								<p class="product__avail">Наличие: <span>есть на складе</span></p>
+
+								<div class="size-options">
+									<p class="size-options-name">Варианты размеров:</p>
+									<div class="size-options-block-btn">
+										<a href="#" class="size-options-block-btn-link _yellow">D30</a>
+										<a href="#" class="size-options-block-btn-link _grey">D40</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="product__descp-line"></div>
+
+							<p class="product__descp-price">Цена <span class="product__descp-price-number rub">15 210</span> </p>
+
+							<div class="product__descp-line"></div>
+
+							<form action="#" class="product__choice d-flex">
+								<p class="product__choice-name">Кол-во:</p>
+								<div class="product__quantity quantity">
+									<div class="quantity__button quantity__button_minus"></div>
+									<div class="quantity__input">
+										<input autocomplete="off" type="number" name="form[]" value="1">
+									</div>
+									<div class="quantity__button quantity__button_plus"></div>
+								</div>
+								<button class="product__btn btn">В корзину</button>
+							</form>
+
+							<!-- <div class="product__text">
+								<h3>Краткое описание</h3>
+								<p>
+									Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+									осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений
+									в домашних условиях.
+								</p>
+							</div> -->
+
+						</div>
 					</div>
 
 				</div>
 			</section>
 
-			<section id="best-offers" class="best-offers">
+			<section id="similar-products" class="similar-products">
 				<div class="_container">
-					<h2 class="best-offers__title title">ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</h2>
+					<h2 class="title">Похожие товары</h2>
+
 					<div class="best-offers__row">
+
 						<div class="card-column">
 							<div class="card-box">
 								<div class="card-box-img">
@@ -204,109 +248,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</section>
 
-			<section id="about" class="about">
-				<div class="_container">
-
-				</div>
-			</section>
-
-			<section id="inform" class="inform">
-				<div class="_container">
-					<div class="inform__row d-flex">
-
-						<div class="inform__img">
-							<img src="img" alt="">
-						</div>
-
-						<div class="inform__descp">
-							<h2 class="inform__title">Дизайнеры / Архитекторы / Декораторы</h2>
-							<ul class="inform__list">
-								<li class="inform__list-item">Более 200 топ брендов</li>
-								<li class="inform__list-item">Производство по спец. заказу</li>
-								<li class="inform__list-item">Проверенный ассортимент</li>
-								<li class="inform__list-item">Образцы и каталоги</li>
-								<li class="inform__list-item">Сопровождение проекта</li>
-								<li class="inform__list-item">Бонусная программа + Cashback</li>
-								<li class="inform__list-item">Подбор по визуализации</li>
-								<li class="inform__list-item">Бартер-реклама instagram</li>
-								<li class="inform__list-item">Составление КП заказчику</li>
-							</ul>
-							<a href="#callback" class="inform__btn btn _popup-link">Отправить заявку</a>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<section id="brends" class="brends">
-				<div class="_container">
-					<h2 class="brends__title title">У НАС ТОЛЬКО ЛУЧШИЕ БРЕНДЫ</h2>
-					<p class="brends__subtitle">
-						Мы собрали лучшие европейские и мировые бренды производителей люстр и светильников, которые есть на складе
-						нашего интернет магазина.
-						Мы можем поставить практически любое декоративное осещение. Свяжитесь с нами, если нужного товара нет на
-						сайте.
-					</p>
-
-					<div class="sliderBrends _swiper d-flex">
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/01.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/02.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/03.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/04.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/05.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/06.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/07.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/08.jpg" alt="">
-						</div>
-						<div class="brends__slide slider__slide">
-							<img src="img/brends/09.jpg" alt="">
-						</div>
-					</div>
-
-					<a href="#" class="brends__btn btn">Перейти к торговым маркам</a>
-
-				</div>
-			</section>
-
-			<section id="certificates" class="certificates">
-				<div class="_container">
-					<h2 class="certificates__title title">СЕРТИФИКАТЫ</h2>
-
-					<div class="certificates__slider sliderCert _swiper d-flex">
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
-						<div class="certificates__slide slider__slide">
-							<img src="img/certificates/01.jpg" alt="">
-						</div>
 					</div>
 
 				</div>
